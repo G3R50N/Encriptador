@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./estiloencriptador.css">
+</head>
+<body>
+    <header>
+        <img src="./Vector.svg" alt="logo">
+    </header>
+    <main>
+        <section class="encriptador">
+            <textarea name="textarea"  id="introducir-texto" class="textarea" cols="30" rows="10" placeholder="Ingrese texto aqui"></textarea>
+            <div class="alerta">
+                <p>&#9762; Solo se admiten letras minúsculas y sin acentos &#9762;</p>
+            </div>
+            <div class="contenedor-botones">
+                <button id="btn-1" class="btn1">Encriptar</button>
+                <button id="btn-2" class="btn2">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="tableroimg">
+            <div id="contenedor-resultado">
+                <h2 id="titulo-resultado"></h2>
+            </div>
+            <div id="contenedorimg" class="contenedorimg">
+                <img src="./Muñeco.svg" alt="Muñeco">
+                <p class="texto1">Nigún Texto fue encontrado</p>
+                <p class="texto2">Ingresa el texto que deseas encriptar o desencriptar </p>
+            </div>
+            <textarea name="resultado" id="resultado" cols="30" rows="10" placeholder="hola"></textarea>
+            <button id="btn-copiar">COPIAR</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;Todos los derechos reservados</p>
+        <p>Elaborado por: Gerson Farid Ortiz Cortes</p>
+    </footer>
+    <script src="./encriptar.js"></script>
+</body>
+</html>
