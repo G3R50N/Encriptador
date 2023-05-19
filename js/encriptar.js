@@ -28,9 +28,9 @@ function encriptartexto() {
     if (mensaje == "") {
         alert("no debe estar vacio")
         document.getElementById("contenedorimg").style.display = "";
+        resultado(no);
     } else if (mensaje.match(mayus) != mensaje.match(mayus)) {
         alert("NO PUEDE CONTENER MAYUSCULAS");
-        resultado(no);
         document.getElementById("contenedorimg").style.display = "";
         document.getElementById("introducir-texto").value = "";
     } else if (mensaje.match(caracteres) != mensaje.match(caracteres)) {
@@ -89,13 +89,11 @@ function desencriptartexto() {
         alert("No puedes introducir caracteres y acentos")
         document.getElementById("introducir-texto").value = "";
         document.getElementById("contenedorimg").style.display = "";
-        resultado(no);
     }
     else {
         msjDesencriptado = mensaje.replace(/ai/g, "a").replace(/enter/g, "e").replace(/imes/g, "i").replace(/ober/g, "o").replace(/ufat/g, "u");
         document.getElementById("resultado").innerHTML = msjDesencriptado;
         document.getElementById("titulo-resultado").innerHTML = desencriptacionExitosa;
-        document.getElementById("contenedorimg").style.display = "";
         resultado(si);
     }
 }
